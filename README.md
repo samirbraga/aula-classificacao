@@ -2,7 +2,7 @@
 
 [![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/samirbraga/aula-classificacao/blob/HEAD/aula_classificacao.ipynb)
 
-Clique em **Abrir no Colab** para carregar o notebook diretamente do GitHub, sem preparar um ambiente local.
+Clique em **Open in Colab** para carregar o notebook diretamente do GitHub, sem preparar um ambiente local.
 
 - [Notebook com explicações, exercícios e resultados](aula_classificacao.ipynb)
 
@@ -26,7 +26,7 @@ Para confirmar a instalação:
 uv run python -c "import sklearn; print(sklearn.__version__)"
 ```
 
-### VS Code: intérprete, Pylance e kernel
+### VS Code
 
 Abra a pasta do projeto no VS Code, para que ele carregue as configurações de `.vscode`. Use as extensões **Python**, **Pylance** e **Jupyter**, recomendadas pelo projeto.
 
@@ -34,11 +34,11 @@ Abra a pasta do projeto no VS Code, para que ele carregue as configurações de 
 2. Abra `aula_classificacao.ipynb`. No seletor de kernel no canto superior direito, escolha **Select Another Kernel... → Python Environments...** e selecione o mesmo `.venv`.
 3. Se os imports continuarem sublinhados, salve o notebook e execute **Developer: Reload Window** pela paleta de comandos.
 
-O intérprete selecionado orienta a análise do Pylance; o kernel executa as células. Ambos devem usar o ambiente do projeto. A configuração `python.defaultInterpreterPath` indica o `.venv` como padrão, mas não substitui uma seleção já salva no VS Code. Consulte a [documentação de intérpretes](https://code.visualstudio.com/docs/python/settings-reference) e a [seleção de kernels](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management).
+O interpreter selecionado orienta a análise do Pylance; o kernel executa as células. Ambos devem usar o ambiente do projeto. A configuração `python.defaultInterpreterPath` indica o `.venv` como padrão, mas não substitui uma seleção já salva no VS Code. Consulte a [documentação de interpreters](https://code.visualstudio.com/docs/python/settings-reference) e a [seleção de kernels](https://code.visualstudio.com/docs/datascience/jupyter-kernel-management).
 
 O caminho padrão em `.vscode/settings.json` aponta explicitamente para o executável no Windows. No Linux/macOS, ajuste-o para `${workspaceFolder}/.venv/bin/python`.
 
-Se os avisos aparecerem na visualização de alterações do Git, abra `aula_classificacao.ipynb` pelo **Explorador de Arquivos do VS Code** (`Ctrl+Shift+E`). A cópia usada na comparação do Git pode ser analisada com um intérprete diferente do arquivo do projeto.
+Se os avisos aparecerem na visualização de alterações do Git, abra `aula_classificacao.ipynb` pelo **Explorador de Arquivos do VS Code** (`Ctrl+Shift+E`). A cópia usada na comparação do Git pode ser analisada com um interpreter diferente do arquivo do projeto.
 
 Para conferir o kernel ativo, execute em uma célula:
 
